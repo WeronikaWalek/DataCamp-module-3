@@ -18,3 +18,11 @@ homelessness_reg_fam=homelessness.sort_values(["region", "family_members"], asce
 print(homelessness_reg_fam.head())
 individuals=homelessness["individuals"]
 print(individuals.head())
+state_fam=homelessness[["state", "family_members"]]
+print(state_fam.head())
+ind_state=homelessness[["individuals", "state"]]
+print(ind_state.head())
+ind_gt_10k=homelessness[homelessness["individuals"] > 10000]
+print(ind_gt_10k)
+mountain_reg=homelessness[homelessness["region"]== "Mountains"]
+print(mountain_reg)

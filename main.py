@@ -1,1 +1,12 @@
-import panda as pd
+import pandas as pd
+homelessness = pd.read_csv('homelessness.csv')
+print(homelessness)
+homelessness.head()
+print(homelessness.head())
+homelessness.info()
+print(homelessness.info())
+print(homelessness.shape)
+print(homelessness.describe())
+print(homelessness.values)
+print(homelessness.columns)
+print(homelessness.index)
